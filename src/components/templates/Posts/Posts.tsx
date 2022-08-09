@@ -3,14 +3,16 @@ import { FlatList } from 'react-native'
 
 import { styles } from '../../../pages/Feed/styles'
 
-import { Post } from '../../organisms'
+import { Post, TPostProps } from '../../organisms'
 
-import { posts } from '../../../utils/posts'
+type TProps = {
+    data: TPostProps[]
+}
 
-export const Posts = () => {
+export const Posts = ({ data }: TProps) => {
     return (
         <FlatList
-            data={posts}
+            data={data}
             style={styles.posts}
             showsVerticalScrollIndicator={false}
             keyExtractor={post => post.id}

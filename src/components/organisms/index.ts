@@ -1,1 +1,1 @@
-export { Post } from './Post/Post'
+export { Post, TPostProps } from './Post/Post'
