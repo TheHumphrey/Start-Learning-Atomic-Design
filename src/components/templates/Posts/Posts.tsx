@@ -3,7 +3,8 @@ import { FlatList } from 'react-native'
 
 import { styles } from './styles'
 
-import { Post, TPostProps } from '../../organisms'
+import { Post } from '../../organisms'
+import { TPostProps } from '../../organisms/Post/Post'
 
 type TProps = {
     data: TPostProps[]
