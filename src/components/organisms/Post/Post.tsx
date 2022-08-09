@@ -16,6 +16,7 @@ import {
 import { PostHeader } from '../../molecules'
 
 import { styles } from '../../../pages/Feed/styles'
+import { PostPhoto } from '../../atoms'
 
 export type TProfile = {
     id: string
@@ -46,7 +47,7 @@ export const Post = ({ data }: TProps) => {
                 location={data.location}
             />
 
-            <Image source={data.cover} style={styles.cover} />
+            <PostPhoto source={data.cover} />
 
             <View style={styles.postFooter}>
                 <View style={styles.postOptions}>
