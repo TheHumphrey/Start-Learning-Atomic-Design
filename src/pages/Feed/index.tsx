@@ -53,6 +53,7 @@ export function Feed() {
         />
       </View>
 
+      <Posts />
 
     </View>
   );
