@@ -8,7 +8,7 @@ import {
 
 import { ProfileIcon } from '../../../global/styles/icons'
 
-import { styles } from '../../../pages/Feed/styles'
+import { styles } from './styles'
 import { PostAvatar, PostLocation, PostUsername } from '../../atoms'
 
 type TProps = {

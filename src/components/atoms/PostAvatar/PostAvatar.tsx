@@ -4,7 +4,7 @@ import {
     ImageProps,
 } from 'react-native'
 
-import { styles } from '../../../pages/Feed/styles'
+import { styles } from './style'
 
 export const PostAvatar = ({ ...rest }: ImageProps) => (
     <Image

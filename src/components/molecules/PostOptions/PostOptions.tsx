@@ -12,7 +12,7 @@ import {
 
 import { ButtonIcon } from '../../atoms/ButtonIcon/ButtonIcon'
 
-import { styles } from '../../../pages/Feed/styles'
+import { styles } from './styles'
 
 export const PostOptions = () => {
     return (

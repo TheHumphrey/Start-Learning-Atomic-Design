@@ -8,7 +8,7 @@ import {
 
 import { PostAbout, PostHeader, PostOptions } from '../../molecules'
 
-import { styles } from '../../../pages/Feed/styles'
+import { styles } from './styles'
 import { PostDescription, PostPhoto } from '../../atoms'
 
 export type TProfile = {

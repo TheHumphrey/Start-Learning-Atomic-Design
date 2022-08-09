@@ -2,7 +2,7 @@ import React from 'react'
 import { BorderlessButton, BorderlessButtonProps } from 'react-native-gesture-handler'
 import { SvgProps } from 'react-native-svg'
 
-import { styles } from '../../../pages/Feed/styles'
+import { styles } from './style'
 
 type TProps = BorderlessButtonProps & {
     icon: React.FC<SvgProps>

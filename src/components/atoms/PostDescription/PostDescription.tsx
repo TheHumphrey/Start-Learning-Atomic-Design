@@ -4,7 +4,7 @@ import {
     TextProps
 } from 'react-native'
 
-import { styles } from '../../../pages/Feed/styles'
+import { styles } from './style'
 
 type TProps = TextProps & {
     value: string
