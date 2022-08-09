@@ -10,8 +10,9 @@ import {
     SaveIcon,
 } from '../../../global/styles/icons'
 
-import { styles } from '../../../pages/Feed/styles'
 import { ButtonIcon } from '../../atoms/ButtonIcon/ButtonIcon'
+
+import { styles } from '../../../pages/Feed/styles'
 
 export const PostOptions = () => {
     return (
