@@ -11,8 +11,9 @@ import {
     FavoriteIcon,
     CommentIcon,
     SaveIcon,
-    ProfileIcon
 } from '../../../global/styles/icons'
+
+import { PostHeader } from '../../molecules'
 
 import { styles } from '../../../pages/Feed/styles'
 
@@ -39,13 +40,11 @@ type TProps = {
 export const Post = ({ data }: TProps) => {
     return (
         <View style={styles.post}>
-            <View style={styles.postHeader}>
-                <Image source={ProfileIcon} style={styles.postAvatar} />
-                <View>
-                    <Text style={styles.postUsername}>{data.username}</Text>
-                    <Text style={styles.postLocation}>{data.location}</Text>
-                </View>
-            </View>
+
+            <PostHeader
+                username={data.username}
+                location={data.location}
+            />
 
             <Image source={data.cover} style={styles.cover} />
 
