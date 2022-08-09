@@ -7,6 +7,10 @@ import {
 } from 'react-native'
 
 import { styles } from '../../../pages/Feed/styles'
+import {
+    PostLiked,
+    PostLikedAvatar
+} from '../../atoms'
 
 type TProps = {
     avatar: ImageProps
@@ -16,8 +20,8 @@ type TProps = {
 export const PostAbout = ({ avatar, likes }: TProps) => {
     return (
         <View style={styles.postAbout}>
-            <Image source={avatar} style={styles.lastLiked} />
-            <Text style={styles.likes}>{likes}</Text>
+            <PostLikedAvatar source={avatar} />
+            <PostLiked value={likes} />
         </View>
     )
 }

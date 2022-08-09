@@ -1,2 +1,7 @@
 export { PostPhoto } from './PostPhoto/PostPhoto'
+export { PostAvatar } from './PostAvatar/PostAvatar'
 export { PostDescription } from './PostDescription/PostDescription'
+export { PostUsername } from './PostUsername/PostUsername'
+export { PostLocation } from './PostLocation/PostLocation'
+export { PostLiked } from './PostLiked/PostLiked'
+export { PostLikedAvatar } from './PostLikedAvatar/PostLikedAvatar'

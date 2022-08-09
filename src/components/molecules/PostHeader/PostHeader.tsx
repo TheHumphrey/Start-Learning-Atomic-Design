@@ -9,6 +9,7 @@ import {
 import { ProfileIcon } from '../../../global/styles/icons'
 
 import { styles } from '../../../pages/Feed/styles'
+import { PostAvatar, PostLocation, PostUsername } from '../../atoms'
 
 type TProps = {
     username: string
@@ -18,10 +19,10 @@ type TProps = {
 export const PostHeader = ({ username, location }: TProps) => {
     return (
         <View style={styles.postHeader}>
-            <Image source={ProfileIcon} style={styles.postAvatar} />
+            <PostAvatar source={ProfileIcon} />
             <View>
-                <Text style={styles.postUsername}>{username}</Text>
-                <Text style={styles.postLocation}>{location}</Text>
+                <PostUsername value={username} />
+                <PostLocation value={location} />
             </View>
         </View>
     )
