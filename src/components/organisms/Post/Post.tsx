@@ -6,17 +6,10 @@ import {
     ImageProps
 } from 'react-native'
 
-import {
-    MessengerIcon,
-    FavoriteIcon,
-    CommentIcon,
-    SaveIcon,
-} from '../../../global/styles/icons'
-
-import { PostHeader } from '../../molecules'
+import { PostAbout, PostHeader, PostOptions } from '../../molecules'
 
 import { styles } from '../../../pages/Feed/styles'
-import { PostPhoto } from '../../atoms'
+import { PostDescription, PostPhoto } from '../../atoms'
 
 export type TProfile = {
     id: string
@@ -50,21 +43,15 @@ export const Post = ({ data }: TProps) => {
             <PostPhoto source={data.cover} />
 
             <View style={styles.postFooter}>
-                <View style={styles.postOptions}>
-                    <View style={styles.postOptionsSide}>
-                        <FavoriteIcon style={styles.postOptionsIcon} />
-                        <CommentIcon style={styles.postOptionsIcon} />
-                        <MessengerIcon style={styles.postOptionsIcon} />
-                    </View>
 
-                    <SaveIcon />
-                </View>
+                <PostOptions />
 
-                <View style={styles.postAbout}>
-                    <Image source={data.lastLiked.avatar} style={styles.lastLiked} />
-                    <Text style={styles.likes}>{data.likes}</Text>
-                </View>
-                <Text style={styles.description}>{data.description}</Text>
+                <PostAbout
+                    avatar={data.lastLiked.avatar}
+                    likes={data.likes}
+                />
+
+                <PostDescription value={data.description} />
             </View>
         </View>
     )
